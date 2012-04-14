@@ -1,0 +1,11 @@
+---
+layout: default
+title: Home
+---
+<script type="text/javascript">
+  document.getElementById("home").setAttribute("class","active");
+</script>
+
+{% for post in site.posts %}
+{% include post_template.html %}
+{% endfor %}
